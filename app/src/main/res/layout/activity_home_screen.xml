@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreenActivity">
+
+    <ListView
+        android:id="@+id/subsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/LightPurple"
+        android:dividerHeight="20.0sp"
+        android:gravity="center"
+        android:textSize="40sp"
+        app:layout_anchorGravity="center">
+
+    </ListView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/LightGreen"
+        app:fabSize="auto"
+        app:rippleColor="@color/material_on_primary_disabled"
+        app:srcCompat="@drawable/ic_add_black_18dp"
+        app:useCompatPadding="false" />
+
+    <TextView
+        android:id="@+id/totalMonthly"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:background="@color/common_google_signin_btn_text_light_focused"
+        android:fontFamily="@font/lato"
+        android:gravity="center"
+        android:text="Total:"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_anchor="@+id/subsList"
+        app:layout_anchorGravity="end|top" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
